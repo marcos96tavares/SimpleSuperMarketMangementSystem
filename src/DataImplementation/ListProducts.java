@@ -2,13 +2,20 @@ package DataImplementation;
 
 public class ListProducts {
 
+    // Private instance variable representing the head of the linked list
     private Node head;
+    // Private instance variable representing the size of the linked list
     private int size = 0;
 
 
     public ListProducts(){
         this.head = null;
     }
+    /**
+     * Adds a new product to the list.
+     *
+     * @param product The Product object to be added to the list.
+     */
     public void add( Product product){
 
         Node node = new Node(product);
@@ -65,7 +72,12 @@ public class ListProducts {
         return result.toString();
     }
 
-
+    /**
+     * Filters products by category and sorts them by quantity.
+     *
+     * @param category The category to filter products.
+     * @return A string containing details of filtered and sorted products.
+     */
 
     public String filterByCategory(String category) {
         Node current = this.head;
@@ -157,7 +169,13 @@ public class ListProducts {
 
         return false; // Product not found or quantity not added
     }
-
+    /**
+     * Removes a specified quantity from the product quantity of the product with the given ID.
+     *
+     * @param quantity  The quantity to be removed from the product quantity.
+     * @param productId The ID of the product for which the quantity is to be removed.
+     * @return The updated quantity of the product after removal, or -1 if the removal is not possible.
+     */
     public int removeQuantityFromProduct(int quantity, int productId) {
         Node current = this.head;
         int value = 0;

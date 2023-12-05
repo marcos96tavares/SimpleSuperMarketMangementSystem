@@ -1,10 +1,11 @@
 package ColletionFolder;
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
 
-public class Serves implements SystemInterface{
+public class Serves implements SystemInterface {
 
 
     private final List<Product> listProduct = new LinkedList<>();
@@ -12,6 +13,7 @@ public class Serves implements SystemInterface{
 
     public Serves() {
     }
+
     /**
      * Adds a new product to the list of products.
      *
@@ -243,16 +245,6 @@ public class Serves implements SystemInterface{
         // Step 6: Return the new quantity after the removal operation
         return newQuantity.get();
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }

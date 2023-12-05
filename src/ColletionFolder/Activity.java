@@ -25,28 +25,6 @@ public class Activity {
 
 
 
-    public String getActivityName() {
-        return activityName;
-    }
-
-    public void setActivityName(String activityName) {
-        this.activityName = activityName;
-    }
-
-    public int getActivityQuantity() {
-        return activityQuantity;
-    }
-
-    public void setActivityQuantity(int activityQuantity) {
-        this.activityQuantity = activityQuantity;
-    }
-
-    public Date getActivityDate() {
-        return activityDate;
-    }
-
-
-
     public int getProduct_id() {
         return product_id;
     }
